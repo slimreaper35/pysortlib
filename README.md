@@ -1,6 +1,8 @@
 # Python Sorting Library
 
-[![Coverage Status](https://coveralls.io/repos/github/slimreaper35/pysortlib/badge.svg?branch=main)](https://coveralls.io/github/slimreaper35/pysortlib?branch=main)
+[![PyPI](https://img.shields.io/pypi/v/pysortlib)](https://pypi.org/project/pysortlib)
+[![Downloads](https://img.shields.io/pypi/dm/pysortlib)](https://pypistats.org/packages/pysortlib)
+[![Coverage](https://coveralls.io/repos/github/slimreaper35/pysortlib/badge.svg?branch=main)](https://coveralls.io/github/slimreaper35/pysortlib?branch=main)
 
 **Sorting algorithms**
 
