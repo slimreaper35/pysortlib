@@ -52,6 +52,13 @@ pre-commit install --hook-type pre-commit
 pre-commit autoupdate
 ```
 
+#### Depenedencies
+
+```bash
+poetry update
+poetry export --with dev --output requirements-dev.txt
+```
+
 #### Coding standards
 
 - [black](https://black.readthedocs.io/en/stable/) - code formatting
