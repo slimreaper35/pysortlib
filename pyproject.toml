@@ -26,6 +26,7 @@ python = "^3.10"
 [tool.poetry.group.dev.dependencies]
 black = "*"
 coveralls = "*"
+cyclonedx-bom = "*"
 hypothesis = "*"
 mypy = "*"
 pre-commit = "*"

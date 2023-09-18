@@ -59,6 +59,12 @@ poetry update
 poetry export --with dev --output requirements-dev.txt
 ```
 
+#### SBOM
+
+```bash
+cyclonedx-py --poetry --format json --purl-bom-ref --output bom.json --force
+```
+
 #### Coding standards
 
 - ~~perfectionism~~
