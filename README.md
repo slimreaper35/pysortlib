@@ -56,7 +56,6 @@ pre-commit autoupdate
 
 ```bash
 poetry update
-poetry export --with dev --output requirements-dev.txt
 ```
 
 #### SBOM
