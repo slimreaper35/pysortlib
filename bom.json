@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:c8f9beaf-d65d-4f61-82e4-0d009a18fc37",
+  "serialNumber": "urn:uuid:3da846ee-275a-426d-9539-30ffb9720b6c",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-09-18T09:42:18.681864+00:00",
+    "timestamp": "2023-09-20T18:57:49.443819+00:00",
     "tools": [
       { "vendor": "CycloneDX", "name": "cyclonedx-bom", "version": "3.11.2" },
       {
@@ -2116,92 +2116,30 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:pypi/gitdb@4.0.10",
-      "name": "gitdb",
-      "version": "4.0.10",
-      "purl": "pkg:pypi/gitdb@4.0.10",
-      "externalReferences": [
-        {
-          "url": "https://pypi.org/project/gitdb/4.0.10",
-          "comment": "Distribution file: gitdb-4.0.10-py3-none-any.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "c286cf298426064079ed96a9e4a9d39e7f3e9bf15ba60701e95f5492f28415c7"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/gitdb/4.0.10",
-          "comment": "Distribution file: gitdb-4.0.10.tar.gz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "6eb990b69df4e15bad899ea868dc46572c3f75339735663b81de79b06f17eb9a"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pkg:pypi/gitpython@3.1.36",
-      "name": "gitpython",
-      "version": "3.1.36",
-      "purl": "pkg:pypi/gitpython@3.1.36",
-      "externalReferences": [
-        {
-          "url": "https://pypi.org/project/gitpython/3.1.36",
-          "comment": "Distribution file: GitPython-3.1.36-py3-none-any.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "8d22b5cfefd17c79914226982bb7851d6ade47545b1735a9d010a2a4c26d8388"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/gitpython/3.1.36",
-          "comment": "Distribution file: GitPython-3.1.36.tar.gz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "4bb0c2a6995e85064140d31a33289aa5dce80133a23d36fcd372d716c54d3ebf"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pkg:pypi/hypothesis@6.86.1",
+      "bom-ref": "pkg:pypi/hypothesis@6.86.2",
       "name": "hypothesis",
-      "version": "6.86.1",
-      "purl": "pkg:pypi/hypothesis@6.86.1",
+      "version": "6.86.2",
+      "purl": "pkg:pypi/hypothesis@6.86.2",
       "externalReferences": [
         {
-          "url": "https://pypi.org/project/hypothesis/6.86.1",
-          "comment": "Distribution file: hypothesis-6.86.1-py3-none-any.whl",
+          "url": "https://pypi.org/project/hypothesis/6.86.2",
+          "comment": "Distribution file: hypothesis-6.86.2-py3-none-any.whl",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "60bd222e6b97e84da603f4289b4953ac5ec85695b2e76a4ad09e2e2f1e24278c"
+              "content": "e1d36522824d62bb3e9fcb7b57dd4a6ca330bb36921324bb19c476bdafabeda7"
             }
           ]
         },
         {
-          "url": "https://pypi.org/project/hypothesis/6.86.1",
-          "comment": "Distribution file: hypothesis-6.86.1.tar.gz",
+          "url": "https://pypi.org/project/hypothesis/6.86.2",
+          "comment": "Distribution file: hypothesis-6.86.2.tar.gz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "cbbc9e392679ab7ab2baba9fefb9fb75a06d1aae46fd7c2d508e2e4a86f03759"
+              "content": "e5d75d70f5a4fc372cddf03ec6141237a0a270ed106aeb2156a4984f06d37b0f"
             }
           ]
         }
@@ -2856,246 +2794,6 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:pypi/pendulum@2.1.2",
-      "name": "pendulum",
-      "version": "2.1.2",
-      "purl": "pkg:pypi/pendulum@2.1.2",
-      "externalReferences": [
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp27-cp27m-macosx_10_15_x86_64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "b6c352f4bd32dff1ea7066bd31ad0f71f8d8100b9ff709fb343f3b86cee43efe"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp27-cp27m-win_amd64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "318f72f62e8e23cd6660dbafe1e346950281a9aed144b5c596b2ddabc1d19739"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp35-cp35m-macosx_10_15_x86_64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "0731f0c661a3cb779d398803655494893c9f581f6488048b3fb629c2342b5394"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp35-cp35m-manylinux1_i686.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "3481fad1dc3f6f6738bd575a951d3c15d4b4ce7c82dce37cf8ac1483fde6e8b0"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp35-cp35m-manylinux1_x86_64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "9702069c694306297ed362ce7e3c1ef8404ac8ede39f9b28b7c1a7ad8c3959e3"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp35-cp35m-win_amd64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "fb53ffa0085002ddd43b6ca61a7b34f2d4d7c3ed66f931fe599e1a531b42af9b"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp36-cp36m-macosx_10_15_x86_64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "c501749fdd3d6f9e726086bf0cd4437281ed47e7bca132ddb522f86a1645d360"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp36-cp36m-manylinux1_i686.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "c807a578a532eeb226150d5006f156632df2cc8c5693d778324b43ff8c515dd0"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp36-cp36m-manylinux1_x86_64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "2d1619a721df661e506eff8db8614016f0720ac171fe80dda1333ee44e684087"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp36-cp36m-win_amd64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "f888f2d2909a414680a29ae74d0592758f2b9fcdee3549887779cd4055e975db"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp37-cp37m-macosx_10_15_x86_64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "e95d329384717c7bf627bf27e204bc3b15c8238fa8d9d9781d93712776c14002"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp37-cp37m-manylinux1_i686.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "4c9c689747f39d0d02a9f94fcee737b34a5773803a64a5fdb046ee9cac7442c5"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp37-cp37m-manylinux1_x86_64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "1245cd0075a3c6d889f581f6325dd8404aca5884dea7223a5566c38aab94642b"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp37-cp37m-win_amd64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "db0a40d8bcd27b4fb46676e8eb3c732c67a5a5e6bfab8927028224fbced0b40b"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp38-cp38-macosx_10_15_x86_64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "f5e236e7730cab1644e1b87aca3d2ff3e375a608542e90fe25685dae46310116"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp38-cp38-manylinux1_i686.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "de42ea3e2943171a9e95141f2eecf972480636e8e484ccffaf1e833929e9e052"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp38-cp38-manylinux1_x86_64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "7c5ec650cb4bec4c63a89a0242cc8c3cebcec92fcfe937c417ba18277d8560be"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp38-cp38-win_amd64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "33fb61601083f3eb1d15edeb45274f73c63b3c44a8524703dc143f4212bf3269"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp39-cp39-manylinux1_i686.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "29c40a6f2942376185728c9a0347d7c0f07905638c83007e1d262781f1e6953a"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2-cp39-cp39-manylinux1_x86_64.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "94b1fc947bfe38579b28e1cccb36f7e28a15e841f30384b5ad6c5e31055c85d7"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pendulum/2.1.2",
-          "comment": "Distribution file: pendulum-2.1.2.tar.gz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "b06a0ca1bfe41c990bbf0c029f0b6501a7f2ec4e38bfec730712015e8860f207"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "library",
       "bom-ref": "pkg:pypi/pip-requirements-parser@32.0.1",
       "name": "pip-requirements-parser",
       "version": "32.0.1",
@@ -3430,68 +3128,6 @@
             {
               "alg": "SHA-256",
               "content": "a9963fcbd904d1ea23e4c30726bba556e2c6b5d312f3aa55f3c68bff78f82986"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pkg:pypi/python-dateutil@2.8.2",
-      "name": "python-dateutil",
-      "version": "2.8.2",
-      "purl": "pkg:pypi/python-dateutil@2.8.2",
-      "externalReferences": [
-        {
-          "url": "https://pypi.org/project/python-dateutil/2.8.2",
-          "comment": "Distribution file: python-dateutil-2.8.2.tar.gz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/python-dateutil/2.8.2",
-          "comment": "Distribution file: python_dateutil-2.8.2-py2.py3-none-any.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pkg:pypi/pytzdata@2020.1",
-      "name": "pytzdata",
-      "version": "2020.1",
-      "purl": "pkg:pypi/pytzdata@2020.1",
-      "externalReferences": [
-        {
-          "url": "https://pypi.org/project/pytzdata/2020.1",
-          "comment": "Distribution file: pytzdata-2020.1-py2.py3-none-any.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "e1e14750bcf95016381e4d472bad004eef710f2d6417240904070b3d6654485f"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/pytzdata/2020.1",
-          "comment": "Distribution file: pytzdata-2020.1.tar.gz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "3efa13b335a00a8de1d345ae41ec78dd11c9f8807f522d39850f2dd828681540"
             }
           ]
         }
@@ -4237,68 +3873,6 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:pypi/six@1.16.0",
-      "name": "six",
-      "version": "1.16.0",
-      "purl": "pkg:pypi/six@1.16.0",
-      "externalReferences": [
-        {
-          "url": "https://pypi.org/project/six/1.16.0",
-          "comment": "Distribution file: six-1.16.0-py2.py3-none-any.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/six/1.16.0",
-          "comment": "Distribution file: six-1.16.0.tar.gz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pkg:pypi/smmap@5.0.1",
-      "name": "smmap",
-      "version": "5.0.1",
-      "purl": "pkg:pypi/smmap@5.0.1",
-      "externalReferences": [
-        {
-          "url": "https://pypi.org/project/smmap/5.0.1",
-          "comment": "Distribution file: smmap-5.0.1-py3-none-any.whl",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "e6d8668fa5f93e706934a62d7b4db19c8d9eb8cf2adbb75ef1b675aa332b69da"
-            }
-          ]
-        },
-        {
-          "url": "https://pypi.org/project/smmap/5.0.1",
-          "comment": "Distribution file: smmap-5.0.1.tar.gz",
-          "type": "distribution",
-          "hashes": [
-            {
-              "alg": "SHA-256",
-              "content": "dceeb6c0028fdb6734471eb07c0cd2aae706ccaecab45965ee83f11c8d3b1f62"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "library",
       "bom-ref": "pkg:pypi/sortedcontainers@2.4.0",
       "name": "sortedcontainers",
       "version": "2.4.0",
@@ -4516,30 +4090,30 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:pypi/urllib3@2.0.4",
+      "bom-ref": "pkg:pypi/urllib3@2.0.5",
       "name": "urllib3",
-      "version": "2.0.4",
-      "purl": "pkg:pypi/urllib3@2.0.4",
+      "version": "2.0.5",
+      "purl": "pkg:pypi/urllib3@2.0.5",
       "externalReferences": [
         {
-          "url": "https://pypi.org/project/urllib3/2.0.4",
-          "comment": "Distribution file: urllib3-2.0.4-py3-none-any.whl",
+          "url": "https://pypi.org/project/urllib3/2.0.5",
+          "comment": "Distribution file: urllib3-2.0.5-py3-none-any.whl",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "de7df1803967d2c2a98e4b11bb7d6bd9210474c46e8a0401514e3a42a75ebde4"
+              "content": "ef16afa8ba34a1f989db38e1dbbe0c302e4289a47856990d0682e374563ce35e"
             }
           ]
         },
         {
-          "url": "https://pypi.org/project/urllib3/2.0.4",
-          "comment": "Distribution file: urllib3-2.0.4.tar.gz",
+          "url": "https://pypi.org/project/urllib3/2.0.5",
+          "comment": "Distribution file: urllib3-2.0.5.tar.gz",
           "type": "distribution",
           "hashes": [
             {
               "alg": "SHA-256",
-              "content": "8d22f86aae8ef5e410d4f539fde9ce6b2113a001bb4d189e0aed70642d602b11"
+              "content": "13abf37382ea2ce6fb744d4dad67838eec857c9f4f57009891805e0b5e123594"
             }
           ]
         }
@@ -4595,9 +4169,7 @@
     { "ref": "pkg:pypi/docopt@0.6.2", "dependsOn": [] },
     { "ref": "pkg:pypi/exceptiongroup@1.1.3", "dependsOn": [] },
     { "ref": "pkg:pypi/filelock@3.12.4", "dependsOn": [] },
-    { "ref": "pkg:pypi/gitdb@4.0.10", "dependsOn": [] },
-    { "ref": "pkg:pypi/gitpython@3.1.36", "dependsOn": [] },
-    { "ref": "pkg:pypi/hypothesis@6.86.1", "dependsOn": [] },
+    { "ref": "pkg:pypi/hypothesis@6.86.2", "dependsOn": [] },
     { "ref": "pkg:pypi/identify@2.5.29", "dependsOn": [] },
     { "ref": "pkg:pypi/idna@3.4", "dependsOn": [] },
     { "ref": "pkg:pypi/iniconfig@2.0.0", "dependsOn": [] },
@@ -4610,7 +4182,6 @@
     { "ref": "pkg:pypi/packageurl-python@0.11.2", "dependsOn": [] },
     { "ref": "pkg:pypi/packaging@23.1", "dependsOn": [] },
     { "ref": "pkg:pypi/pathspec@0.11.2", "dependsOn": [] },
-    { "ref": "pkg:pypi/pendulum@2.1.2", "dependsOn": [] },
     { "ref": "pkg:pypi/pip-requirements-parser@32.0.1", "dependsOn": [] },
     { "ref": "pkg:pypi/platformdirs@3.10.0", "dependsOn": [] },
     { "ref": "pkg:pypi/pluggy@1.3.0", "dependsOn": [] },
@@ -4622,15 +4193,11 @@
     { "ref": "pkg:pypi/pytest@7.4.2", "dependsOn": [] },
     { "ref": "pkg:pypi/pytest-cov@4.1.0", "dependsOn": [] },
     { "ref": "pkg:pypi/pytest-rich@0.1.1", "dependsOn": [] },
-    { "ref": "pkg:pypi/python-dateutil@2.8.2", "dependsOn": [] },
-    { "ref": "pkg:pypi/pytzdata@2020.1", "dependsOn": [] },
     { "ref": "pkg:pypi/pyyaml@6.0.1", "dependsOn": [] },
     { "ref": "pkg:pypi/requests@2.31.0", "dependsOn": [] },
     { "ref": "pkg:pypi/rich@13.5.3", "dependsOn": [] },
     { "ref": "pkg:pypi/ruff@0.0.290", "dependsOn": [] },
     { "ref": "pkg:pypi/setuptools@68.2.2", "dependsOn": [] },
-    { "ref": "pkg:pypi/six@1.16.0", "dependsOn": [] },
-    { "ref": "pkg:pypi/smmap@5.0.1", "dependsOn": [] },
     { "ref": "pkg:pypi/sortedcontainers@2.4.0", "dependsOn": [] },
     { "ref": "pkg:pypi/toml@0.10.2", "dependsOn": [] },
     { "ref": "pkg:pypi/tomli@2.0.1", "dependsOn": [] },
@@ -4638,7 +4205,7 @@
     { "ref": "pkg:pypi/tox@4.11.3", "dependsOn": [] },
     { "ref": "pkg:pypi/tox-ini-fmt@1.3.1", "dependsOn": [] },
     { "ref": "pkg:pypi/typing-extensions@4.8.0", "dependsOn": [] },
-    { "ref": "pkg:pypi/urllib3@2.0.4", "dependsOn": [] },
+    { "ref": "pkg:pypi/urllib3@2.0.5", "dependsOn": [] },
     { "ref": "pkg:pypi/virtualenv@20.24.5", "dependsOn": [] }
   ]
 }
