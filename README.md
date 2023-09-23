@@ -41,7 +41,7 @@ print(array)
 
 ## Development
 
-#### Virtual environment
+### Virtual environment
 
 ```bash
 pip install --user poetry
@@ -58,10 +58,17 @@ pre-commit install --hook-type pre-commit
 pre-commit autoupdate
 ```
 
+<<<<<<< HEAD
 #### SBOM
 
 ```bash
 cyclonedx-py --poetry --format json --purl-bom-ref --output bom.json --force
+=======
+#### Depenedencies
+
+```bash
+poetry update
+>>>>>>> d8ff000 (Delete SBOM)
 ```
 
 #### Coding standards
