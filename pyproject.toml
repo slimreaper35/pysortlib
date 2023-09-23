@@ -21,8 +21,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-
-[tool.poetry.group.dev.dependencies]
+# for dependabot
 black = "23.9.1"
 coveralls = "3.3.1"
 cyclonedx-bom = "3.11.2"

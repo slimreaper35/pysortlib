@@ -58,12 +58,6 @@ pre-commit install --hook-type pre-commit
 pre-commit autoupdate
 ```
 
-#### Depenedencies
-
-```bash
-poetry update
-```
-
 #### SBOM
 
 ```bash
