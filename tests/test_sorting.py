@@ -13,6 +13,7 @@ from pysortlib.sorting import (
     quick_sort,
     radix_sort,
     selection_sort,
+    shell_sort,
 )
 
 
@@ -54,6 +55,13 @@ def test_quick_sort(array: list[int]) -> None:
 def test_heap_sort(array: list[int]) -> None:
     sorted_copy = sorted(array)
     heap_sort(array)
+    assert array == sorted_copy
+
+
+@given(lists(integers()))
+def test_shell_sort(array: list[int]) -> None:
+    sorted_copy = sorted(array)
+    shell_sort(array)
     assert array == sorted_copy
 
 

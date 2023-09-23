@@ -14,12 +14,12 @@ Implemented:
 - Selection sort
 - Quick sort
 - Heap sort
+- Shell sort
 - Counting sort
 - Radix sort
 
 Planned:
 
-- Shell sort
 - Cycle sort
 - Pancake sort
 
@@ -56,19 +56,6 @@ poetry install
 pre-commit clean
 pre-commit install --hook-type pre-commit
 pre-commit autoupdate
-```
-
-<<<<<<< HEAD
-#### SBOM
-
-```bash
-cyclonedx-py --poetry --format json --purl-bom-ref --output bom.json --force
-=======
-#### Depenedencies
-
-```bash
-poetry update
->>>>>>> d8ff000 (Delete SBOM)
 ```
 
 #### Coding standards

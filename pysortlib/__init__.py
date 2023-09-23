@@ -9,4 +9,5 @@ from .sorting import (
     quick_sort,
     radix_sort,
     selection_sort,
+    shell_sort,
 )

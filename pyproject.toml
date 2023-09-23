@@ -21,7 +21,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-# for dependabot
+
 black = "23.9.1"
 coveralls = "3.3.1"
 hypothesis = "6.86.2"

@@ -9,15 +9,20 @@ def insert_sort(array: list[int]) -> None:
     Time complexity: O(n^2), where n is the length of the array.
     Extra space complexity: O(1)
 
+    Stable: Yes (the relative order of equal elements is preserved).
+    In-place: Yes (the input array is modified).
+
     :param array: array of integers
     :return: None
     """
     for i in range(1, len(array)):
         current = array[i]
         j = i
+
         while j > 0 and array[j - 1] > current:
             array[j] = array[j - 1]
             j -= 1
+
         array[j] = current
 
 
@@ -27,6 +32,9 @@ def bubble_sort(array: list[int]) -> None:
     Time complexity: O(n^2), where n is the length of the array.
     Extra space complexity: O(1)
 
+    Stable: Yes (the relative order of equal elements is preserved).
+    In-place: Yes (the input array is modified).
+
     :param array: array of integers
     :return: None
     """
@@ -34,23 +42,23 @@ def bubble_sort(array: list[int]) -> None:
     for i in range(length):
         for j in range(length - i - 1):
             if array[j] > array[j + 1]:
-                array[j], array[j + 1] = array[j + 1], array[j]
+                swap(array, j, j + 1)
 
 
-def _merge(array_one: list[int], array_two: list[int]) -> list[int]:
+def _merge(array_1: list[int], array_2: list[int]) -> list[int]:
     result = []
 
     i = j = 0
-    while i < len(array_one) and j < len(array_two):
-        if array_one[i] < array_two[j]:
-            result.append(array_one[i])
+    while i < len(array_1) and j < len(array_2):
+        if array_1[i] < array_2[j]:
+            result.append(array_1[i])
             i += 1
         else:
-            result.append(array_two[j])
+            result.append(array_2[j])
             j += 1
 
-    result.extend(array_one[i:])
-    result.extend(array_two[j:])
+    result.extend(array_1[i:])
+    result.extend(array_2[j:])
     return result
 
 
@@ -59,6 +67,9 @@ def merge_sort(array: list[int]) -> list[int]:
 
     Time complexity: O(n*log(n)), where n is the length of the array.
     Extra space complexity: O(n), where n is the length of the array.
+
+    Stable: Yes (the relative order of equal elements is preserved).
+    In-place: No (the input array is not modified).
 
     :param array: array of integers
     :return: sorted array of integers
@@ -83,6 +94,9 @@ def selection_sort(array: list[int]) -> None:
     Time complexity: O(n^2), where n is the length of the array.
     Extra space complexity: O(1)
 
+    Stable: No (the relative order of equal elements is not preserved).
+    In-place: Yes (the input array is modified).
+
     :param array: array of integers
     :return: None
     """
@@ -93,7 +107,7 @@ def selection_sort(array: list[int]) -> None:
             if array[j] < array[minimum]:
                 minimum = j
 
-        array[i], array[minimum] = array[minimum], array[i]
+        swap(array, i, minimum)
 
 
 def quick_sort(array: list[int], left: int, right: int) -> None:
@@ -102,26 +116,30 @@ def quick_sort(array: list[int], left: int, right: int) -> None:
     Time complexity: O(n*log(n)), where n is the length of the array.
     Extra space complexity: O(1)
 
+    Stable: No (the relative order of equal elements is not preserved).
+    In-place: Yes (the input array is modified).
+
     :param array: array of integers
     :param left: left index (inclusive)
     :param right: right index (inclusive)
     :return: None
     """
     if left < right:
-        mid = _partition(array, left, right)
-        quick_sort(array, left, mid - 1)
-        quick_sort(array, mid + 1, right)
+        middle = _partition(array, left, right)
+        quick_sort(array, left, middle - 1)
+        quick_sort(array, middle + 1, right)
 
 
 def _partition(array: list[int], left: int, right: int) -> int:
     pivot = array[right]
     pivot_index = left - 1
+
     for i in range(left, right):
         if array[i] <= pivot:
             pivot_index += 1
             array[pivot_index], array[i] = array[i], array[pivot_index]
 
-    array[pivot_index + 1], array[right] = array[right], array[pivot_index + 1]
+    swap(array, pivot_index + 1, right)
     return pivot_index + 1
 
 
@@ -130,6 +148,9 @@ def heap_sort(array: list[int]) -> None:
 
     Time complexity: O(n*log(n)), where n is the length of the array.
     Extra space complexity: O(1).
+
+    Stable: No (the relative order of equal elements is not preserved).
+    In-place: Yes (the input array is modified).
 
     :param array: array of integers
     :return: None
@@ -168,6 +189,35 @@ def _build_heap(array: list[int]) -> None:
         _heapify(array, len(array), i)
 
 
+def shell_sort(array: list[int]) -> None:
+    """Sorts an array of integers using the shell sort algorithm.
+
+    Time complexity: O(n^2), where n is the length of the array.
+    Extra space complexity: O(1).
+
+    Stable: No (the relative order of equal elements is not preserved).
+    In-place: Yes (the input array is modified).
+
+    :param array: array of integers
+    :return: None
+    """
+    length = len(array)
+    gap = length // 2
+
+    while gap > 0:
+        for i in range(gap, length):
+            current = array[i]
+            j = i
+
+            while j >= gap and array[j - gap] > current:
+                array[j] = array[j - gap]
+                j -= gap
+
+            array[j] = current
+
+        gap //= 2
+
+
 def counting_sort(array: list[int], *, max_value: int) -> list[int]:
     """Sorts an array of integers using the counting sort algorithm.
 
@@ -178,6 +228,9 @@ def counting_sort(array: list[int], *, max_value: int) -> list[int]:
     Extra space complexity: O(n+k), where:
      - n is the length of the array
      - k is the maximum value in the array
+
+    Stable: Yes (the relative order of equal elements is preserved).
+    In-place: No (the input array is not modified).
 
     :param array: array of integers
     :param max_value: maximum value in the array
@@ -215,6 +268,9 @@ def radix_sort(array: list[int], *, max_digits: int, base: int = 10) -> list[int
      - n is the length of the array
      - k is the number of possible digits (the base)
 
+    Stable: Yes (the relative order of equal elements is preserved).
+    In-place: No (the input array is not modified).
+
     :param array: array of integers
     :param max_digits: number of digits in the largest number
     :param base: base of the numbers, default is 10
@@ -234,3 +290,8 @@ def radix_sort(array: list[int], *, max_digits: int, base: int = 10) -> list[int
         array = list(chain.from_iterable(bins))
 
     return array
+
+
+def swap(array: list[int], index_1: int, index_2: int) -> None:
+    """Swap two elements in the array."""
+    array[index_1], array[index_2] = array[index_2], array[index_1]
