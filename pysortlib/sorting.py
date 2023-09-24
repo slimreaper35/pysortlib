@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from itertools import chain, repeat
 
+from pysortlib.utils import swap
+
 
 def insert_sort(array: list[int]) -> None:
     """Sorts an array of integers using the insertion sort algorithm.
@@ -110,6 +112,19 @@ def selection_sort(array: list[int]) -> None:
         swap(array, i, minimum)
 
 
+def _partition(array: list[int], start: int, end: int) -> int:
+    pivot = array[end]
+    pivot_index = start - 1
+
+    for i in range(start, end):
+        if array[i] <= pivot:
+            pivot_index += 1
+            array[pivot_index], array[i] = array[i], array[pivot_index]
+
+    swap(array, pivot_index + 1, end)
+    return pivot_index + 1
+
+
 def quick_sort(array: list[int], left: int, right: int) -> None:
     """Sorts an array of integers using the quick sort algorithm.
 
@@ -128,38 +143,6 @@ def quick_sort(array: list[int], left: int, right: int) -> None:
         middle = _partition(array, left, right)
         quick_sort(array, left, middle - 1)
         quick_sort(array, middle + 1, right)
-
-
-def _partition(array: list[int], left: int, right: int) -> int:
-    pivot = array[right]
-    pivot_index = left - 1
-
-    for i in range(left, right):
-        if array[i] <= pivot:
-            pivot_index += 1
-            array[pivot_index], array[i] = array[i], array[pivot_index]
-
-    swap(array, pivot_index + 1, right)
-    return pivot_index + 1
-
-
-def heap_sort(array: list[int]) -> None:
-    """Sorts an array of integers using the heap sort algorithm.
-
-    Time complexity: O(n*log(n)), where n is the length of the array.
-    Extra space complexity: O(1).
-
-    Stable: No (the relative order of equal elements is not preserved).
-    In-place: Yes (the input array is modified).
-
-    :param array: array of integers
-    :return: None
-    """
-    _build_heap(array)
-
-    for index in reversed(range(len(array))):
-        array[index], array[0] = array[0], array[index]
-        _heapify(array, index, 0)
 
 
 def _left_child(index: int) -> int:
@@ -187,6 +170,25 @@ def _heapify(array: list[int], size: int, index: int) -> None:
 def _build_heap(array: list[int]) -> None:
     for i in reversed(range(len(array) // 2)):
         _heapify(array, len(array), i)
+
+
+def heap_sort(array: list[int]) -> None:
+    """Sorts an array of integers using the heap sort algorithm.
+
+    Time complexity: O(n*log(n)), where n is the length of the array.
+    Extra space complexity: O(1).
+
+    Stable: No (the relative order of equal elements is not preserved).
+    In-place: Yes (the input array is modified).
+
+    :param array: array of integers
+    :return: None
+    """
+    _build_heap(array)
+
+    for index in reversed(range(len(array))):
+        array[index], array[0] = array[0], array[index]
+        _heapify(array, index, 0)
 
 
 def shell_sort(array: list[int]) -> None:
@@ -290,8 +292,3 @@ def radix_sort(array: list[int], *, max_digits: int, base: int = 10) -> list[int
         array = list(chain.from_iterable(bins))
 
     return array
-
-
-def swap(array: list[int], index_1: int, index_2: int) -> None:
-    """Swap two elements in the array."""
-    array[index_1], array[index_2] = array[index_2], array[index_1]
