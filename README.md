@@ -50,15 +50,20 @@ poety shell
 poetry install
 ```
 
-#### Pre-commit
+### Dependencies
+
+```bash
+poetry update
+```
+
+### Pre-commit
 
 ```bash
 pre-commit clean
 pre-commit install --hook-type pre-commit
-pre-commit autoupdate
 ```
 
-#### Coding standards
+### Coding standards
 
 - ~~perfectionism~~
 - [black](https://black.readthedocs.io/en/stable/) - code formatting
