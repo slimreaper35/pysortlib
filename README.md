@@ -8,15 +8,15 @@
 
 Implemented:
 
-- Insert sort
 - Bubble sort
-- Merge sort
-- Selection sort
-- Quick sort
-- Heap sort
-- Shell sort
 - Counting sort
+- Heap sort
+- Insert sort
+- Merge sort
+- Quick sort
 - Radix sort
+- Selection sort
+- Shell sort
 
 Planned:
 
