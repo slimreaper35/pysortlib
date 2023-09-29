@@ -1,31 +1,6 @@
 from __future__ import annotations
 
-from itertools import chain, repeat
-
 from pysortlib.utils import swap
-
-
-def insert_sort(array: list[int]) -> None:
-    """Sorts an array of integers using the insertion sort algorithm.
-
-    Time complexity: O(n^2), where n is the length of the array.
-    Extra space complexity: O(1)
-
-    Stable: Yes (the relative order of equal elements is preserved).
-    In-place: Yes (the input array is modified).
-
-    :param array: array of integers
-    :return: None
-    """
-    for i in range(1, len(array)):
-        current = array[i]
-        j = i
-
-        while j > 0 and array[j - 1] > current:
-            array[j] = array[j - 1]
-            j -= 1
-
-        array[j] = current
 
 
 def bubble_sort(array: list[int]) -> None:
@@ -45,104 +20,6 @@ def bubble_sort(array: list[int]) -> None:
         for j in range(length - i - 1):
             if array[j] > array[j + 1]:
                 swap(array, j, j + 1)
-
-
-def _merge(array_1: list[int], array_2: list[int]) -> list[int]:
-    result = []
-
-    i = j = 0
-    while i < len(array_1) and j < len(array_2):
-        if array_1[i] < array_2[j]:
-            result.append(array_1[i])
-            i += 1
-        else:
-            result.append(array_2[j])
-            j += 1
-
-    result.extend(array_1[i:])
-    result.extend(array_2[j:])
-    return result
-
-
-def merge_sort(array: list[int]) -> list[int]:
-    """Sorts an array of integers using the merge sort algorithm.
-
-    Time complexity: O(n*log(n)), where n is the length of the array.
-    Extra space complexity: O(n), where n is the length of the array.
-
-    Stable: Yes (the relative order of equal elements is preserved).
-    In-place: No (the input array is not modified).
-
-    :param array: array of integers
-    :return: sorted array of integers
-    """
-    length = len(array)
-    if length <= 1:
-        return array
-
-    mid = length // 2
-    left_array = array[:mid]
-    right_array = array[mid:]
-
-    left_array_sorted = merge_sort(left_array)
-    right_array_sorted = merge_sort(right_array)
-
-    return _merge(left_array_sorted, right_array_sorted)
-
-
-def selection_sort(array: list[int]) -> None:
-    """Sorts an array of integers using the selection sort algorithm.
-
-    Time complexity: O(n^2), where n is the length of the array.
-    Extra space complexity: O(1)
-
-    Stable: No (the relative order of equal elements is not preserved).
-    In-place: Yes (the input array is modified).
-
-    :param array: array of integers
-    :return: None
-    """
-    length = len(array)
-    for i in range(length - 1):
-        minimum = i
-        for j in range(i + 1, length):
-            if array[j] < array[minimum]:
-                minimum = j
-
-        swap(array, i, minimum)
-
-
-def _partition(array: list[int], start: int, end: int) -> int:
-    pivot = array[end]
-    pivot_index = start - 1
-
-    for i in range(start, end):
-        if array[i] <= pivot:
-            pivot_index += 1
-            array[pivot_index], array[i] = array[i], array[pivot_index]
-
-    swap(array, pivot_index + 1, end)
-    return pivot_index + 1
-
-
-def quick_sort(array: list[int], left: int, right: int) -> None:
-    """Sorts an array of integers using the quick sort algorithm.
-
-    Time complexity: O(n*log(n)), where n is the length of the array.
-    Extra space complexity: O(1)
-
-    Stable: No (the relative order of equal elements is not preserved).
-    In-place: Yes (the input array is modified).
-
-    :param array: array of integers
-    :param left: left index (inclusive)
-    :param right: right index (inclusive)
-    :return: None
-    """
-    if left < right:
-        middle = _partition(array, left, right)
-        quick_sort(array, left, middle - 1)
-        quick_sort(array, middle + 1, right)
 
 
 def _left_child(index: int) -> int:
@@ -191,6 +68,127 @@ def heap_sort(array: list[int]) -> None:
         _heapify(array, index, 0)
 
 
+def insert_sort(array: list[int]) -> None:
+    """Sorts an array of integers using the insertion sort algorithm.
+
+    Time complexity: O(n^2), where n is the length of the array.
+    Extra space complexity: O(1)
+
+    Stable: Yes (the relative order of equal elements is preserved).
+    In-place: Yes (the input array is modified).
+
+    :param array: array of integers
+    :return: None
+    """
+    for i in range(1, len(array)):
+        current = array[i]
+        j = i
+
+        while j > 0 and array[j - 1] > current:
+            array[j] = array[j - 1]
+            j -= 1
+
+        array[j] = current
+
+
+def _merge(array_1: list[int], array_2: list[int]) -> list[int]:
+    result = []
+
+    i = j = 0
+    while i < len(array_1) and j < len(array_2):
+        if array_1[i] < array_2[j]:
+            result.append(array_1[i])
+            i += 1
+        else:
+            result.append(array_2[j])
+            j += 1
+
+    result.extend(array_1[i:])
+    result.extend(array_2[j:])
+    return result
+
+
+def merge_sort(array: list[int]) -> list[int]:
+    """Sorts an array of integers using the merge sort algorithm.
+
+    Time complexity: O(n*log(n)), where n is the length of the array.
+    Extra space complexity: O(n), where n is the length of the array.
+
+    Stable: Yes (the relative order of equal elements is preserved).
+    In-place: No (the input array is not modified).
+
+    :param array: array of integers
+    :return: sorted array of integers
+    """
+    length = len(array)
+    if length <= 1:
+        return array
+
+    mid = length // 2
+    left_array = array[:mid]
+    right_array = array[mid:]
+
+    left_array_sorted = merge_sort(left_array)
+    right_array_sorted = merge_sort(right_array)
+
+    return _merge(left_array_sorted, right_array_sorted)
+
+
+def _partition(array: list[int], start: int, end: int) -> int:
+    pivot = array[end]
+    pivot_index = start - 1
+
+    for i in range(start, end):
+        if array[i] <= pivot:
+            pivot_index += 1
+            swap(array, pivot_index, i)
+
+    swap(array, pivot_index + 1, end)
+    return pivot_index + 1
+
+
+def quick_sort(array: list[int], left: int, right: int) -> None:
+    """Sorts an array of integers using the quick sort algorithm.
+
+    Time complexity: O(n*log(n)), where n is the length of the array.
+    Extra space complexity: O(1)
+
+    Stable: No (the relative order of equal elements is not preserved).
+    In-place: Yes (the input array is modified).
+
+    :param array: array of integers
+    :param left: left index (inclusive)
+    :param right: right index (inclusive)
+    :return: None
+    """
+    if left < right:
+        middle = _partition(array, left, right)
+        quick_sort(array, left, middle - 1)
+        quick_sort(array, middle + 1, right)
+
+
+def selection_sort(array: list[int]) -> None:
+    """Sorts an array of integers using the selection sort algorithm.
+
+    Time complexity: O(n^2), where n is the length of the array.
+    Extra space complexity: O(1)
+
+    Stable: No (the relative order of equal elements is not preserved).
+    In-place: Yes (the input array is modified).
+
+    :param array: array of integers
+    :return: None
+    """
+    length = len(array)
+    for i in range(length - 1):
+        minimum = i
+        for j in range(i + 1, length):
+            if array[j] < array[minimum]:
+                minimum = j
+
+        swap(array, i, minimum)
+
+
 def shell_sort(array: list[int]) -> None:
     """Sorts an array of integers using the shell sort algorithm.
 
@@ -218,77 +216,3 @@ def shell_sort(array: list[int]) -> None:
             array[j] = current
 
         gap //= 2
-
-
-def counting_sort(array: list[int], *, max_value: int) -> list[int]:
-    """Sorts an array of integers using the counting sort algorithm.
-
-    Time complexity: O(n+k), where:
-     - n is the length of the array
-     - k is the maximum value in the array
-
-    Extra space complexity: O(n+k), where:
-     - n is the length of the array
-     - k is the maximum value in the array
-
-    Stable: Yes (the relative order of equal elements is preserved).
-    In-place: No (the input array is not modified).
-
-    :param array: array of integers
-    :param max_value: maximum value in the array
-    :raises: ValueError: if the array contains negative integers
-    :return: sorted array of integers
-    """
-    if any(num < 0 for num in array):
-        msg = "The array should contain only non-negative integers"
-        raise ValueError(msg)
-
-    count_of_each_integer = list(repeat(0, max_value + 1))
-    for num in array:
-        count_of_each_integer[num] += 1
-
-    for i in range(1, max_value + 1):
-        count_of_each_integer[i] += count_of_each_integer[i - 1]
-
-    result = list(repeat(0, len(array)))
-    for num in reversed(array):
-        count_of_each_integer[num] -= 1
-        result[count_of_each_integer[num]] = num
-
-    return result
-
-
-def radix_sort(array: list[int], *, max_digits: int, base: int = 10) -> list[int]:
-    """Sorts an array of integers using the radix sort algorithm.
-
-    Time complexity: O(d*(n+k)), where:
-     - d is the number of digits in the largest number
-     - n is the length of the array
-     - k is the number of possible digits (the base)
-
-    Extra space complexity: O(n+k), where:
-     - n is the length of the array
-     - k is the number of possible digits (the base)
-
-    Stable: Yes (the relative order of equal elements is preserved).
-    In-place: No (the input array is not modified).
-
-    :param array: array of integers
-    :param max_digits: number of digits in the largest number
-    :param base: base of the numbers, default is 10
-    :raises: ValueError: if the array contains negative integers
-    :return: sorted array of integers
-    """
-    if any(num < 0 for num in array):
-        msg = "The array should contain only non-negative integers"
-        raise ValueError(msg)
-
-    for i in range(max_digits):
-        bins: list[list[int]] = [[] for _ in range(base)]
-        for num in array:
-            digit = (num // base**i) % base
-            bins[digit].append(num)
-
-        array = list(chain.from_iterable(bins))
-
-    return array
