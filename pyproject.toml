@@ -24,7 +24,7 @@ python = "^3.10"
 
 [tool.poetry.dev-dependencies]
 black = "23.9.1"
-hypothesis = "6.87.0"
+hypothesis = "6.87.1"
 mypy = "1.5.1"
 pre-commit = "3.4.0"
 pyproject-fmt = "1.1.0"
