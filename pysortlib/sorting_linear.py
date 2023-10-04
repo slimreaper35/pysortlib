@@ -54,7 +54,7 @@ def radix_sort(array: list[int], *, max_digits: int, base: int = 10) -> list[int
      - k is the number of possible digits (the base)
 
     Stable: Yes (the relative order of equal elements is preserved).
-    In-place: No (the input array is not modified).
+    In-place: Yes (the input array is modified).
 
     :param array: array of integers
     :param max_digits: number of digits in the largest number
