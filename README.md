@@ -22,6 +22,7 @@ Planned:
 
 - Cycle sort
 - Pancake sort
+- Sleep sort
 
 ## Install
 
