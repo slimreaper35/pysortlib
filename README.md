@@ -13,6 +13,7 @@ Implemented:
 - Heap sort
 - Insert sort
 - Merge sort
+- Pancake sort
 - Quick sort
 - Radix sort
 - Selection sort
@@ -21,7 +22,6 @@ Implemented:
 Planned:
 
 - Cycle sort
-- Pancake sort
 - Sleep sort
 
 ## Install
