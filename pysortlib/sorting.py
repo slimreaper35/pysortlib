@@ -4,7 +4,8 @@ from pysortlib.utils import swap
 
 
 def bubble_sort(array: list[int]) -> None:
-    """Sorts an array of integers using the bubble sort algorithm.
+    """
+    Sorts an array of integers using the bubble sort algorithm.
 
     Time complexity: O(n^2), where n is the length of the array.
     Extra space complexity: O(1)
@@ -50,7 +51,8 @@ def _build_heap(array: list[int]) -> None:
 
 
 def heap_sort(array: list[int]) -> None:
-    """Sorts an array of integers using the heap sort algorithm.
+    """
+    Sorts an array of integers using the heap sort algorithm.
 
     Time complexity: O(n*log(n)), where n is the length of the array.
     Extra space complexity: O(1).
@@ -69,7 +71,8 @@ def heap_sort(array: list[int]) -> None:
 
 
 def insert_sort(array: list[int]) -> None:
-    """Sorts an array of integers using the insertion sort algorithm.
+    """
+    Sorts an array of integers using the insertion sort algorithm.
 
     Time complexity: O(n^2), where n is the length of the array.
     Extra space complexity: O(1)
@@ -109,7 +112,8 @@ def _merge(array_1: list[int], array_2: list[int]) -> list[int]:
 
 
 def merge_sort(array: list[int]) -> list[int]:
-    """Sorts an array of integers using the merge sort algorithm.
+    """
+    Sorts an array of integers using the merge sort algorithm.
 
     Time complexity: O(n*log(n)), where n is the length of the array.
     Extra space complexity: O(n), where n is the length of the array.
@@ -148,7 +152,8 @@ def _partition(array: list[int], start: int, end: int) -> int:
 
 
 def quick_sort(array: list[int], left: int, right: int) -> None:
-    """Sorts an array of integers using the quick sort algorithm.
+    """
+    Sorts an array of integers using the quick sort algorithm.
 
     Time complexity: O(n*log(n)), where n is the length of the array.
     Extra space complexity: O(1)
@@ -168,7 +173,8 @@ def quick_sort(array: list[int], left: int, right: int) -> None:
 
 
 def selection_sort(array: list[int]) -> None:
-    """Sorts an array of integers using the selection sort algorithm.
+    """
+    Sorts an array of integers using the selection sort algorithm.
 
     Time complexity: O(n^2), where n is the length of the array.
     Extra space complexity: O(1)
@@ -190,7 +196,8 @@ def selection_sort(array: list[int]) -> None:
 
 
 def shell_sort(array: list[int]) -> None:
-    """Sorts an array of integers using the shell sort algorithm.
+    """
+    Sorts an array of integers using the shell sort algorithm.
 
     Time complexity: O(n^2), where n is the length of the array.
     Extra space complexity: O(1).

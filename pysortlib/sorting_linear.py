@@ -6,7 +6,8 @@ from .utils import check_negative_integers
 
 
 def counting_sort(array: list[int], *, max_value: int) -> list[int]:
-    """Sorts an array of integers using the counting sort algorithm.
+    """
+    Sorts an array of integers using the counting sort algorithm.
 
     Time complexity: O(n+k), where:
      - n is the length of the array
@@ -42,7 +43,8 @@ def counting_sort(array: list[int], *, max_value: int) -> list[int]:
 
 
 def radix_sort(array: list[int], *, max_digits: int, base: int = 10) -> list[int]:
-    """Sorts an array of integers using the radix sort algorithm.
+    """
+    Sorts an array of integers using the radix sort algorithm.
 
     Time complexity: O(d*(n+k)), where:
      - d is the number of digits in the largest number
