@@ -71,7 +71,3 @@ pre-commit install --hook-type pre-commit
 - [ruff](https://beta.ruff.rs/docs/) - static code analysis
 - [mypy](https://mypy.readthedocs.io/en/stable/) - static type checking
 - [pytest](https://docs.pytest.org/en/stable/) - unit tests
-
-## License
-
-This project is licensed under the terms of the MIT license.
