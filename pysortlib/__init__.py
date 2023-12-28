@@ -9,4 +9,4 @@ from .sorting import (
     selection_sort,
     shell_sort,
 )
-from .sorting_linear import counting_sort, radix_sort
+from .sorting_extra import counting_sort, radix_sort, sleep_sort

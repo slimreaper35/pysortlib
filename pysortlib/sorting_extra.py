@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import concurrent.futures
+import time
 from itertools import chain, repeat
 
 from .utils import check_negative_integers
@@ -75,3 +77,25 @@ def radix_sort(array: list[int], *, max_digits: int, base: int = 10) -> list[int
         array = list(chain.from_iterable(bins))
 
     return array
+
+
+def _shut_up_for(secs: int) -> int:
+    time.sleep(secs)
+    return secs
+
+
+def sleep_sort(array: list[int]) -> list[int]:
+    """
+    Sorts an array of integers using the sleep sort algorithm.
+
+    Time complexity: O(n), where n is the length of the array.
+    Extra space complexity: O(n), where n is the length of the array.
+
+    :param array: array of integers
+    :return: sorted array of integers
+    """
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        futures = [executor.submit(_shut_up_for, num) for num in array]
+        iterator = concurrent.futures.as_completed(futures)
+
+        return [future.result() for future in iterator]

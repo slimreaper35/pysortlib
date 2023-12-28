@@ -18,11 +18,11 @@ Implemented:
 - Radix sort
 - Selection sort
 - Shell sort
+- Sleep sort
 
 Planned:
 
 - Cycle sort
-- Sleep sort
 
 ## Install
 
