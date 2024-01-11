@@ -493,23 +493,23 @@ testing = ["covdefaults (>=2.3)", "pytest (>=7.4)", "pytest-cov (>=4.1)", "pytes
 
 [[package]]
 name = "pyproject-fmt"
-version = "1.5.3"
+version = "1.6.0"
 description = "Format your pyproject.toml file"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pyproject_fmt-1.5.3-py3-none-any.whl", hash = "sha256:4f03bf7f8dd9adced96d4dd24e15768d4fd37b1c334d8cef7183f4df705f28a2"},
-    {file = "pyproject_fmt-1.5.3.tar.gz", hash = "sha256:42301ec67af4e72ac718ef4ec388d2ccf413aeb6f0c1040b08f10a33dcf774de"},
+    {file = "pyproject_fmt-1.6.0-py3-none-any.whl", hash = "sha256:f8444c394009939ee75efbfd020c3c498ece2ca6382ee6bb955ab1a459c1ecdd"},
+    {file = "pyproject_fmt-1.6.0.tar.gz", hash = "sha256:80ce38746031ffd2df7e0abc9544060790063b0ffdb17ab4c66e1dab13802a04"},
 ]
 
 [package.dependencies]
 natsort = ">=8.4"
 packaging = ">=23.2"
-tomlkit = ">=0.12.1"
+tomlkit = ">=0.12.3"
 
 [package.extras]
-docs = ["furo (>=2023.9.10)", "sphinx (>=7.2.6)", "sphinx-argparse-cli (>=1.11.1)", "sphinx-autodoc-typehints (>=1.24)", "sphinx-copybutton (>=0.5.2)"]
-test = ["covdefaults (>=2.3)", "pytest (>=7.4.2)", "pytest-cov (>=4.1)", "pytest-mock (>=3.11.1)"]
+docs = ["furo (>=2023.9.10)", "sphinx (>=7.2.6)", "sphinx-argparse-cli (>=1.11.1)", "sphinx-autodoc-typehints (>=1.25.2)", "sphinx-copybutton (>=0.5.2)"]
+test = ["covdefaults (>=2.3)", "pytest (>=7.4.3)", "pytest-cov (>=4.1)", "pytest-mock (>=3.12)"]
 
 [[package]]
 name = "pytest"
