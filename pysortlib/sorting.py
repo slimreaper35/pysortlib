@@ -23,6 +23,48 @@ def bubble_sort(array: list[int]) -> None:
                 swap(array, j, j + 1)
 
 
+def cycle_sort(array: list[int]) -> None:
+    """
+    Sorts an array of integers using the cycle sort algorithm.
+
+    Time complexity: O(n^2), where n is the length of the array.
+    Extra space complexity: O(1)
+
+    Stable: No (the relative order of equal elements is not preserved).
+    In-place: Yes (the input array is modified).
+
+    :param array: array of integers
+    :return: None
+    """
+    length = len(array)
+    for i in range(length - 1):
+        item = array[i]
+        position = i
+
+        for j in range(i + 1, length):
+            if array[j] < item:
+                position += 1
+
+        if position == i:
+            continue
+
+        while item == array[position]:
+            position += 1
+
+        array[position], item = item, array[position]
+
+        while position != i:
+            position = i
+            for j in range(i + 1, length):
+                if array[j] < item:
+                    position += 1
+
+            while item == array[position]:
+                position += 1
+
+            array[position], item = item, array[position]
+
+
 def _left_child(index: int) -> int:
     return 2 * index + 1
 

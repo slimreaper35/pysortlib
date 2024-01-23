@@ -8,6 +8,7 @@ from hypothesis.strategies import integers, lists
 
 from pysortlib.sorting import (
     bubble_sort,
+    cycle_sort,
     heap_sort,
     insert_sort,
     merge_sort,
@@ -22,6 +23,7 @@ from pysortlib.sorting import (
     "func",
     [
         bubble_sort,
+        cycle_sort,
         heap_sort,
         insert_sort,
         pancake_sort,

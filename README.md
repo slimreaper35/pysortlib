@@ -4,12 +4,13 @@
 [![Downloads](https://static.pepy.tech/badge/pysortlib)](https://pepy.tech/project/pysortlib)
 [![Coverage](https://coveralls.io/repos/github/slimreaper35/pysortlib/badge.svg?branch=main)](https://coveralls.io/github/slimreaper35/pysortlib?branch=main)
 
-**Sorting algorithms with precise implementation and documentation.**
+Library of sorting algorithms with precise implementation and documentation.
 
-Implemented:
+## Algorithms
 
 - Bubble sort
 - Counting sort
+- Cycle sort
 - Heap sort
 - Insert sort
 - Merge sort
@@ -19,10 +20,6 @@ Implemented:
 - Selection sort
 - Shell sort
 - Sleep sort
-
-Planned:
-
-- Cycle sort
 
 ## Install
 
