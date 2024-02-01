@@ -3,11 +3,15 @@ updates:
 
   - package-ecosystem: "github-actions"
     directory: "/"
+    assignees:
+      - "slimreaper35"
     schedule:
       interval: "monthly"
 
   - package-ecosystem: "pip"
     directory: "/"
+    assignees:
+      - "slimreaper35"
     schedule:
       interval: "monthly"
     groups:
