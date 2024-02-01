@@ -493,13 +493,13 @@ testing = ["covdefaults (>=2.3)", "pytest (>=7.4)", "pytest-cov (>=4.1)", "pytes
 
 [[package]]
 name = "pyproject-fmt"
-version = "1.6.0"
+version = "1.7.0"
 description = "Format your pyproject.toml file"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pyproject_fmt-1.6.0-py3-none-any.whl", hash = "sha256:f8444c394009939ee75efbfd020c3c498ece2ca6382ee6bb955ab1a459c1ecdd"},
-    {file = "pyproject_fmt-1.6.0.tar.gz", hash = "sha256:80ce38746031ffd2df7e0abc9544060790063b0ffdb17ab4c66e1dab13802a04"},
+    {file = "pyproject_fmt-1.7.0-py3-none-any.whl", hash = "sha256:aa69a7c88b6e88d9169c7749f117e4529bcf539bae42c1037f2fec540d1a79f0"},
+    {file = "pyproject_fmt-1.7.0.tar.gz", hash = "sha256:db404b2e5d186a6cdfe2b90d7cf1d548cc8e46f87acd278cb7748ef3f05368c2"},
 ]
 
 [package.dependencies]
