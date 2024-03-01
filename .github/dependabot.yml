@@ -3,6 +3,8 @@ updates:
 
   - package-ecosystem: "github-actions"
     directory: "/"
+    reviewers:
+      - "slimreaper35"
     assignees:
       - "slimreaper35"
     schedule:
@@ -10,6 +12,8 @@ updates:
 
   - package-ecosystem: "pip"
     directory: "/"
+    reviewers:
+      - "slimreaper35"
     assignees:
       - "slimreaper35"
     schedule:
