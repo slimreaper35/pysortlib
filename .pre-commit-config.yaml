@@ -21,4 +21,4 @@ repos:
     rev: "2.0.4"
     hooks:
       - id: pyproject-fmt
-        args: [ --stdout, --indent=4 ]
+        args: [ --stdout ]

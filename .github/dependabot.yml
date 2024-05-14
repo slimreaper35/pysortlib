@@ -8,18 +8,3 @@ updates:
       - "slimreaper35"
     schedule:
       interval: "monthly"
-
-  - package-ecosystem: "pip"
-    directory: "/"
-    reviewers:
-      - "slimreaper35"
-    assignees:
-      - "slimreaper35"
-    schedule:
-      interval: "monthly"
-    groups:
-      all-version-updates:
-        update-types:
-          - "major"
-          - "minor"
-          - "patch"
