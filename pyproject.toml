@@ -6,7 +6,7 @@ requires = [
 
 [tool.poetry]
 name = "pysortlib"
-version = "0.5.0"
+version = "0.5.1"
 description = "Python Sorting Library"
 license = "MIT"
 authors = [
