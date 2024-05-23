@@ -214,13 +214,13 @@ typing = ["typing-extensions (>=4.8)"]
 
 [[package]]
 name = "hypothesis"
-version = "6.102.1"
+version = "6.102.5"
 description = "A library for property-based testing"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "hypothesis-6.102.1-py3-none-any.whl", hash = "sha256:90bbdc3aa6d90ca349a9a257793e66cafdea03a44bbb8dad940d2618b92acc5b"},
-    {file = "hypothesis-6.102.1.tar.gz", hash = "sha256:ba1d6fd8369faa9adf19b1bfee60bceaa9eba165d7b3815df6a271cb75d41797"},
+    {file = "hypothesis-6.102.5-py3-none-any.whl", hash = "sha256:6e06cefaab620b70568dd9e9f34da88a480497fec0ccbbe29b62d9a21193a8fb"},
+    {file = "hypothesis-6.102.5.tar.gz", hash = "sha256:a2b3cc8dc4aaf0f416cfda90d4914fdccd0d5511aa43456e7eb80675e396a3f8"},
 ]
 
 [package.dependencies]
@@ -228,10 +228,10 @@ attrs = ">=22.2.0"
 sortedcontainers = ">=2.1.0,<3.0.0"
 
 [package.extras]
-all = ["backports.zoneinfo (>=0.2.1)", "black (>=19.10b0)", "click (>=7.0)", "crosshair-tool (>=0.0.54)", "django (>=3.2)", "dpcontracts (>=0.4)", "hypothesis-crosshair (>=0.0.2)", "lark (>=0.10.1)", "libcst (>=0.3.16)", "numpy (>=1.17.3)", "pandas (>=1.1)", "pytest (>=4.6)", "python-dateutil (>=1.4)", "pytz (>=2014.1)", "redis (>=3.0.0)", "rich (>=9.0.0)", "tzdata (>=2024.1)"]
+all = ["backports.zoneinfo (>=0.2.1)", "black (>=19.10b0)", "click (>=7.0)", "crosshair-tool (>=0.0.54)", "django (>=3.2)", "dpcontracts (>=0.4)", "hypothesis-crosshair (>=0.0.4)", "lark (>=0.10.1)", "libcst (>=0.3.16)", "numpy (>=1.17.3)", "pandas (>=1.1)", "pytest (>=4.6)", "python-dateutil (>=1.4)", "pytz (>=2014.1)", "redis (>=3.0.0)", "rich (>=9.0.0)", "tzdata (>=2024.1)"]
 cli = ["black (>=19.10b0)", "click (>=7.0)", "rich (>=9.0.0)"]
 codemods = ["libcst (>=0.3.16)"]
-crosshair = ["crosshair-tool (>=0.0.54)", "hypothesis-crosshair (>=0.0.2)"]
+crosshair = ["crosshair-tool (>=0.0.54)", "hypothesis-crosshair (>=0.0.4)"]
 dateutil = ["python-dateutil (>=1.4)"]
 django = ["django (>=3.2)"]
 dpcontracts = ["dpcontracts (>=0.4)"]
@@ -399,13 +399,13 @@ files = [
 
 [[package]]
 name = "platformdirs"
-version = "4.2.1"
+version = "4.2.2"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "platformdirs-4.2.1-py3-none-any.whl", hash = "sha256:17d5a1161b3fd67b390023cb2d3b026bbd40abde6fdb052dfbd3a29c3ba22ee1"},
-    {file = "platformdirs-4.2.1.tar.gz", hash = "sha256:031cd18d4ec63ec53e82dceaac0417d218a6863f7745dfcc9efe7793b7039bdf"},
+    {file = "platformdirs-4.2.2-py3-none-any.whl", hash = "sha256:2d7a1657e36a80ea911db832a8a6ece5ee53d8de21edd5cc5879af6530b1bfee"},
+    {file = "platformdirs-4.2.2.tar.gz", hash = "sha256:38b7b51f512eed9e84a22788b4bce1de17c0adb134d6becb09836e37d8654cd3"},
 ]
 
 [package.extras]
@@ -480,17 +480,17 @@ testing = ["covdefaults (>=2.3)", "pytest (>=7.4)", "pytest-cov (>=4.1)", "pytes
 
 [[package]]
 name = "pyproject-fmt"
-version = "2.0.4"
+version = "2.1.3"
 description = "Format your pyproject.toml file"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pyproject_fmt-2.0.4-py3-none-any.whl", hash = "sha256:c59aeae17941107464132a9175c9f31ea4186512a57e299f351f918da8182a47"},
-    {file = "pyproject_fmt-2.0.4.tar.gz", hash = "sha256:60164d814bc079157f009653f4d69e5c9c8d9bffdd7c716d698f82e8fcd0bb9c"},
+    {file = "pyproject_fmt-2.1.3-py3-none-any.whl", hash = "sha256:5de47fde65256f81b04ad7855891feff5cd9b0c6f2db584e0f2274df0ef7009c"},
+    {file = "pyproject_fmt-2.1.3.tar.gz", hash = "sha256:4fe12151c48504202fd8b1eae27e0d584c31e69f6e58c97dca6df504bdeb191a"},
 ]
 
 [package.dependencies]
-pyproject-fmt-rust = "1.0.6"
+pyproject-fmt-rust = "1.1.3"
 
 [package.extras]
 docs = ["furo (>=2024.5.6)", "sphinx (>=7.3.7)", "sphinx-argparse-cli (>=1.15)", "sphinx-autodoc-typehints (>=2.1)", "sphinx-copybutton (>=0.5.2)"]
@@ -498,33 +498,33 @@ test = ["covdefaults (>=2.3)", "pytest (>=8.2)", "pytest-cov (>=5)", "pytest-moc
 
 [[package]]
 name = "pyproject-fmt-rust"
-version = "1.0.6"
+version = "1.1.3"
 description = "Format your pyproject.toml file"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pyproject_fmt_rust-1.0.6-cp38-abi3-macosx_10_12_x86_64.whl", hash = "sha256:29e2302a3e0c5d2a3516e34981e477a52120920c7606bf8b549b52961d867871"},
-    {file = "pyproject_fmt_rust-1.0.6-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:d7d0fac84e6443875324c3e7bc5a8c9e8875fd4c599ef1a06be3774485304f25"},
-    {file = "pyproject_fmt_rust-1.0.6-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:5ac7a9099d4bb72f72503d4a1a889fe76321672b2f4e3aeed931f30804135b6c"},
-    {file = "pyproject_fmt_rust-1.0.6-cp38-abi3-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:3699d1b27440b5a27e4ef52e9b45ad2c006f3cc50ffb80396b394c75d5ee3692"},
-    {file = "pyproject_fmt_rust-1.0.6-cp38-abi3-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:7da9a6bb002d54584e16861fef8a49709db172249672020dd3363c9c18d93c2d"},
-    {file = "pyproject_fmt_rust-1.0.6-cp38-abi3-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:d9dda64c047032698bfa7bda0aaee65a5c5d835deb27ffaedaadd74d9f6478e0"},
-    {file = "pyproject_fmt_rust-1.0.6-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:3d74ad02f28430bc85042d4af27a51321fdfc056e4d53cdf1006ff5716bb06c3"},
-    {file = "pyproject_fmt_rust-1.0.6-cp38-abi3-manylinux_2_5_i686.manylinux1_i686.whl", hash = "sha256:647518db59385d1b3ab6ab83d490559ece44d4aa4369d501b45c39eaa72ab56d"},
-    {file = "pyproject_fmt_rust-1.0.6-cp38-abi3-musllinux_1_1_i686.whl", hash = "sha256:c7e9b60e8ebe5b47e8f0a205c0691731230e628cac7850b85d39e6919b908821"},
-    {file = "pyproject_fmt_rust-1.0.6-cp38-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:859e4dca6a51717203d7e6995602e7325a7ddf1e3552e9c7e2ef5d2a671c0640"},
-    {file = "pyproject_fmt_rust-1.0.6-cp38-abi3-win32.whl", hash = "sha256:04050c2857c0c053cd1227cc72241490d0130558cf8e3791ac14c08da56e41b5"},
-    {file = "pyproject_fmt_rust-1.0.6-cp38-abi3-win_amd64.whl", hash = "sha256:e16444be13521cc9e3d99bc77cc158c4d1c7f039524d6249dc182fd8f0de361d"},
-    {file = "pyproject_fmt_rust-1.0.6-pp310-pypy310_pp73-macosx_10_12_x86_64.whl", hash = "sha256:89c8e121e6f6e090b19322fae196628b58d2da44d7300678cc637d0ea0ae478f"},
-    {file = "pyproject_fmt_rust-1.0.6-pp310-pypy310_pp73-macosx_11_0_arm64.whl", hash = "sha256:c083af36d8dc34f60bcf5fc1e33429833f4d53690b98cfe6572348045bff081f"},
-    {file = "pyproject_fmt_rust-1.0.6-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:eb752c778261366776c57b16aee9cc255a631fa59b4ed477076e8dde1a437dd1"},
-    {file = "pyproject_fmt_rust-1.0.6-pp38-pypy38_pp73-macosx_10_12_x86_64.whl", hash = "sha256:ba22feb80f67bcfe862866c2dba62e7198c55dba33a905492ba72b56b8aba8a7"},
-    {file = "pyproject_fmt_rust-1.0.6-pp38-pypy38_pp73-macosx_11_0_arm64.whl", hash = "sha256:2b49eb9f998232f2d821cf1afdd183e64f0d2e03b8694ee3a8be5a390a203202"},
-    {file = "pyproject_fmt_rust-1.0.6-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c8df5a42b1cc5878a331ce649f37f5fe0a373306ff5cd9967006aee9717d5612"},
-    {file = "pyproject_fmt_rust-1.0.6-pp39-pypy39_pp73-macosx_10_12_x86_64.whl", hash = "sha256:acc0cba0f2f0707e54dfa6f20221082ad898c31657e4ae067160ac2c43a64556"},
-    {file = "pyproject_fmt_rust-1.0.6-pp39-pypy39_pp73-macosx_11_0_arm64.whl", hash = "sha256:f9c57d3b38c0860434e2461479152cbeb2bd7e7bdb88e7315a52afef8c70895e"},
-    {file = "pyproject_fmt_rust-1.0.6-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2be5ca9c8b440bb7b06bf1019576c7bed3a2f420be762e1cc7db669520ceafea"},
-    {file = "pyproject_fmt_rust-1.0.6.tar.gz", hash = "sha256:45de72d91810a969ecb845ecbe3c35111f319be9c1dbb1a7655d92390ba19600"},
+    {file = "pyproject_fmt_rust-1.1.3-cp38-abi3-macosx_10_12_x86_64.whl", hash = "sha256:c2377206abc88336f22c2a6c4966b5ea2188a92a0f897d7c48830e9626039d98"},
+    {file = "pyproject_fmt_rust-1.1.3-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:4431d7675676604c1b9aabfd9bbfbeff725cce8278493e0c5dc709473d629488"},
+    {file = "pyproject_fmt_rust-1.1.3-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:7ffbce75ebfdd40dc91b4f18d018fbe26ddf03906f990c96881c6c341bc6e94c"},
+    {file = "pyproject_fmt_rust-1.1.3-cp38-abi3-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:5844c05f48b56f89573f0e37f938e948e56d9491eafe89b07b362b19e27473ff"},
+    {file = "pyproject_fmt_rust-1.1.3-cp38-abi3-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:20036fc15936701ef1e05b5de9e4bf0eb6c4fc21f53970f009d94c290c94b418"},
+    {file = "pyproject_fmt_rust-1.1.3-cp38-abi3-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:c8f838aa61321c39be6366b500d304ee2a4a7f3be761d29c24d1dd9421dfcb49"},
+    {file = "pyproject_fmt_rust-1.1.3-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:594d38ef23abdca70d74deaef929d4f2850329cf25e621b3bd7ce2748a83970c"},
+    {file = "pyproject_fmt_rust-1.1.3-cp38-abi3-manylinux_2_5_i686.manylinux1_i686.whl", hash = "sha256:56202729d2cfee287ef5f0a99b4c7ae61a7864a2e1b1c1ee58c79fb4ce969b7b"},
+    {file = "pyproject_fmt_rust-1.1.3-cp38-abi3-musllinux_1_1_i686.whl", hash = "sha256:c872476e8a17b15b4a4d8331ab46791778200b5d4adc9bf77699daeb5a16fb07"},
+    {file = "pyproject_fmt_rust-1.1.3-cp38-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:ca459f8926db8487ee3321b4f4157016c00dcdd8e93af136d08c8de9814c7c5a"},
+    {file = "pyproject_fmt_rust-1.1.3-cp38-abi3-win32.whl", hash = "sha256:60cb2d7fd3b661a2e017729d08b186df63a1b6512bc271dd3819d8870065697a"},
+    {file = "pyproject_fmt_rust-1.1.3-cp38-abi3-win_amd64.whl", hash = "sha256:45b4b71e4ab6c62ab0ca216c91d45a587e5371b82b2cf53ed4e8ad22b83e17fd"},
+    {file = "pyproject_fmt_rust-1.1.3-pp310-pypy310_pp73-macosx_10_12_x86_64.whl", hash = "sha256:eea9d28283f116a2ab27c9bf4edfefe183db2ff898370c65241d92de14c44e32"},
+    {file = "pyproject_fmt_rust-1.1.3-pp310-pypy310_pp73-macosx_11_0_arm64.whl", hash = "sha256:4a86efc9446f8d2a469e19088810ce2f069c409c46999dde684c10a4aa5e87f4"},
+    {file = "pyproject_fmt_rust-1.1.3-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2515cdc60aae5540451bc0e298c7ea6a1b48da22debb7f45c039656f3caadf9c"},
+    {file = "pyproject_fmt_rust-1.1.3-pp38-pypy38_pp73-macosx_10_12_x86_64.whl", hash = "sha256:2d1c37ba4d82eb6f6b28c5df7a120eca36e561f6bcda8ba24b2dc75ff490f48f"},
+    {file = "pyproject_fmt_rust-1.1.3-pp38-pypy38_pp73-macosx_11_0_arm64.whl", hash = "sha256:b11e41d89326196ae0c8e99261a588cfbcfffd58fb55c200a467c00ff00dfb77"},
+    {file = "pyproject_fmt_rust-1.1.3-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:cd11278ae74a1a904ac36e4ab727d9c39fe2806f595f9c296e37bc12b198d0f2"},
+    {file = "pyproject_fmt_rust-1.1.3-pp39-pypy39_pp73-macosx_10_12_x86_64.whl", hash = "sha256:07bb7e0fdf43ed81ef69e9fc05c87e8f62ea9964429817ac1f293bd80e9df02c"},
+    {file = "pyproject_fmt_rust-1.1.3-pp39-pypy39_pp73-macosx_11_0_arm64.whl", hash = "sha256:6a03a4378d21aa071445dc17d71af387b3a1b9e3c3ffb2a65f7bcf12fb206a47"},
+    {file = "pyproject_fmt_rust-1.1.3-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a599775b0905d7618b6e89fed874647d298ffad78fe16947a721fcc61ebbe6e5"},
+    {file = "pyproject_fmt_rust-1.1.3.tar.gz", hash = "sha256:5b8874b2f79eab2556202f3e5f621025b3867aa1a704fabefefac48ad7a12485"},
 ]
 
 [package.extras]
@@ -532,13 +532,13 @@ test = ["covdefaults (>=2.3)", "pytest (>=8.2)", "pytest-cov (>=5)"]
 
 [[package]]
 name = "pytest"
-version = "8.2.0"
+version = "8.2.1"
 description = "pytest: simple powerful testing with Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pytest-8.2.0-py3-none-any.whl", hash = "sha256:1733f0620f6cda4095bbf0d9ff8022486e91892245bb9e7d5542c018f612f233"},
-    {file = "pytest-8.2.0.tar.gz", hash = "sha256:d507d4482197eac0ba2bae2e9babf0672eb333017bcedaa5fb1a3d42c1174b3f"},
+    {file = "pytest-8.2.1-py3-none-any.whl", hash = "sha256:faccc5d332b8c3719f40283d0d44aa5cf101cec36f88cde9ed8f2bc0538612b1"},
+    {file = "pytest-8.2.1.tar.gz", hash = "sha256:5046e5b46d8e4cac199c373041f26be56fdb81eb4e67dc11d4e10811fc3408fd"},
 ]
 
 [package.dependencies]
@@ -662,45 +662,44 @@ jupyter = ["ipywidgets (>=7.5.1,<9)"]
 
 [[package]]
 name = "ruff"
-version = "0.4.4"
+version = "0.4.5"
 description = "An extremely fast Python linter and code formatter, written in Rust."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "ruff-0.4.4-py3-none-macosx_10_12_x86_64.whl", hash = "sha256:29d44ef5bb6a08e235c8249294fa8d431adc1426bfda99ed493119e6f9ea1bf6"},
-    {file = "ruff-0.4.4-py3-none-macosx_11_0_arm64.whl", hash = "sha256:c4efe62b5bbb24178c950732ddd40712b878a9b96b1d02b0ff0b08a090cbd891"},
-    {file = "ruff-0.4.4-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4c8e2f1e8fc12d07ab521a9005d68a969e167b589cbcaee354cb61e9d9de9c15"},
-    {file = "ruff-0.4.4-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:60ed88b636a463214905c002fa3eaab19795679ed55529f91e488db3fe8976ab"},
-    {file = "ruff-0.4.4-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:b90fc5e170fc71c712cc4d9ab0e24ea505c6a9e4ebf346787a67e691dfb72e85"},
-    {file = "ruff-0.4.4-py3-none-manylinux_2_17_ppc64.manylinux2014_ppc64.whl", hash = "sha256:8e7e6ebc10ef16dcdc77fd5557ee60647512b400e4a60bdc4849468f076f6eef"},
-    {file = "ruff-0.4.4-py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:b9ddb2c494fb79fc208cd15ffe08f32b7682519e067413dbaf5f4b01a6087bcd"},
-    {file = "ruff-0.4.4-py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:c51c928a14f9f0a871082603e25a1588059b7e08a920f2f9fa7157b5bf08cfe9"},
-    {file = "ruff-0.4.4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b5eb0a4bfd6400b7d07c09a7725e1a98c3b838be557fee229ac0f84d9aa49c36"},
-    {file = "ruff-0.4.4-py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:b1867ee9bf3acc21778dcb293db504692eda5f7a11a6e6cc40890182a9f9e595"},
-    {file = "ruff-0.4.4-py3-none-musllinux_1_2_armv7l.whl", hash = "sha256:1aecced1269481ef2894cc495647392a34b0bf3e28ff53ed95a385b13aa45768"},
-    {file = "ruff-0.4.4-py3-none-musllinux_1_2_i686.whl", hash = "sha256:9da73eb616b3241a307b837f32756dc20a0b07e2bcb694fec73699c93d04a69e"},
-    {file = "ruff-0.4.4-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:958b4ea5589706a81065e2a776237de2ecc3e763342e5cc8e02a4a4d8a5e6f95"},
-    {file = "ruff-0.4.4-py3-none-win32.whl", hash = "sha256:cb53473849f011bca6e754f2cdf47cafc9c4f4ff4570003a0dad0b9b6890e876"},
-    {file = "ruff-0.4.4-py3-none-win_amd64.whl", hash = "sha256:424e5b72597482543b684c11def82669cc6b395aa8cc69acc1858b5ef3e5daae"},
-    {file = "ruff-0.4.4-py3-none-win_arm64.whl", hash = "sha256:39df0537b47d3b597293edbb95baf54ff5b49589eb7ff41926d8243caa995ea6"},
-    {file = "ruff-0.4.4.tar.gz", hash = "sha256:f87ea42d5cdebdc6a69761a9d0bc83ae9b3b30d0ad78952005ba6568d6c022af"},
+    {file = "ruff-0.4.5-py3-none-macosx_10_12_x86_64.whl", hash = "sha256:8f58e615dec58b1a6b291769b559e12fdffb53cc4187160a2fc83250eaf54e96"},
+    {file = "ruff-0.4.5-py3-none-macosx_11_0_arm64.whl", hash = "sha256:84dd157474e16e3a82745d2afa1016c17d27cb5d52b12e3d45d418bcc6d49264"},
+    {file = "ruff-0.4.5-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:25f483ad9d50b00e7fd577f6d0305aa18494c6af139bce7319c68a17180087f4"},
+    {file = "ruff-0.4.5-py3-none-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:63fde3bf6f3ad4e990357af1d30e8ba2730860a954ea9282c95fc0846f5f64af"},
+    {file = "ruff-0.4.5-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:78e3ba4620dee27f76bbcad97067766026c918ba0f2d035c2fc25cbdd04d9c97"},
+    {file = "ruff-0.4.5-py3-none-manylinux_2_17_ppc64.manylinux2014_ppc64.whl", hash = "sha256:441dab55c568e38d02bbda68a926a3d0b54f5510095c9de7f95e47a39e0168aa"},
+    {file = "ruff-0.4.5-py3-none-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:1169e47e9c4136c997f08f9857ae889d614c5035d87d38fda9b44b4338909cdf"},
+    {file = "ruff-0.4.5-py3-none-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:755ac9ac2598a941512fc36a9070a13c88d72ff874a9781493eb237ab02d75df"},
+    {file = "ruff-0.4.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f4b02a65985be2b34b170025a8b92449088ce61e33e69956ce4d316c0fe7cce0"},
+    {file = "ruff-0.4.5-py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:75a426506a183d9201e7e5664de3f6b414ad3850d7625764106f7b6d0486f0a1"},
+    {file = "ruff-0.4.5-py3-none-musllinux_1_2_armv7l.whl", hash = "sha256:6e1b139b45e2911419044237d90b60e472f57285950e1492c757dfc88259bb06"},
+    {file = "ruff-0.4.5-py3-none-musllinux_1_2_i686.whl", hash = "sha256:a6f29a8221d2e3d85ff0c7b4371c0e37b39c87732c969b4d90f3dad2e721c5b1"},
+    {file = "ruff-0.4.5-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:d6ef817124d72b54cc923f3444828ba24fa45c3164bc9e8f1813db2f3d3a8a11"},
+    {file = "ruff-0.4.5-py3-none-win32.whl", hash = "sha256:aed8166c18b1a169a5d3ec28a49b43340949e400665555b51ee06f22813ef062"},
+    {file = "ruff-0.4.5-py3-none-win_amd64.whl", hash = "sha256:b0b03c619d2b4350b4a27e34fd2ac64d0dabe1afbf43de57d0f9d8a05ecffa45"},
+    {file = "ruff-0.4.5-py3-none-win_arm64.whl", hash = "sha256:9d15de3425f53161b3f5a5658d4522e4eee5ea002bf2ac7aa380743dd9ad5fba"},
+    {file = "ruff-0.4.5.tar.gz", hash = "sha256:286eabd47e7d4d521d199cab84deca135557e6d1e0f0d01c29e757c3cb151b54"},
 ]
 
 [[package]]
 name = "setuptools"
-version = "69.5.1"
+version = "70.0.0"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "setuptools-69.5.1-py3-none-any.whl", hash = "sha256:c636ac361bc47580504644275c9ad802c50415c7522212252c033bd15f301f32"},
-    {file = "setuptools-69.5.1.tar.gz", hash = "sha256:6c1fccdac05a97e598fb0ae3bbed5904ccb317337a51139dcd51453611bbb987"},
+    {file = "setuptools-70.0.0-py3-none-any.whl", hash = "sha256:54faa7f2e8d2d11bcd2c07bed282eef1046b5c080d1c32add737d7b5817b1ad4"},
+    {file = "setuptools-70.0.0.tar.gz", hash = "sha256:f211a66637b8fa059bb28183da127d4e86396c991a942b028c6650d4319c3fd0"},
 ]
 
 [package.extras]
-docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-favicon", "sphinx-inline-tabs", "sphinx-lint", "sphinx-notfound-page (>=1,<2)", "sphinx-reredirects", "sphinxcontrib-towncrier"]
-testing = ["build[virtualenv]", "filelock (>=3.4.0)", "importlib-metadata", "ini2toml[lite] (>=0.9)", "jaraco.develop (>=7.21)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "mypy (==1.9)", "packaging (>=23.2)", "pip (>=19.1)", "pytest (>=6,!=8.1.1)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-home (>=0.5)", "pytest-mypy", "pytest-perf", "pytest-ruff (>=0.2.1)", "pytest-timeout", "pytest-xdist (>=3)", "tomli", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel"]
-testing-integration = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "packaging (>=23.2)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
+docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "pyproject-hooks (!=1.1)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-favicon", "sphinx-inline-tabs", "sphinx-lint", "sphinx-notfound-page (>=1,<2)", "sphinx-reredirects", "sphinxcontrib-towncrier"]
+testing = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "importlib-metadata", "ini2toml[lite] (>=0.14)", "jaraco.develop (>=7.21)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "mypy (==1.9)", "packaging (>=23.2)", "pip (>=19.1)", "pyproject-hooks (!=1.1)", "pytest (>=6,!=8.1.1)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-home (>=0.5)", "pytest-mypy", "pytest-perf", "pytest-ruff (>=0.2.1)", "pytest-subprocess", "pytest-timeout", "pytest-xdist (>=3)", "tomli", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel"]
 
 [[package]]
 name = "sortedcontainers"
