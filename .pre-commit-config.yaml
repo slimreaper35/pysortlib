@@ -18,7 +18,7 @@ repos:
         args: [ --stdout ]
 
   - repo: https://github.com/tox-dev/pyproject-fmt
-    rev: "2.1.3"
+    rev: "2.1.4"
     hooks:
       - id: pyproject-fmt
         args: [ --stdout ]
