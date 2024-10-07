@@ -2,7 +2,7 @@ default_stages: [ pre-commit ]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: "v4.6.0"
+    rev: "v5.0.0"
     hooks:
       - id: end-of-file-fixer
       - id: mixed-line-ending
@@ -12,13 +12,13 @@ repos:
       - id: check-yaml
 
   - repo: https://github.com/tox-dev/tox-ini-fmt
-    rev: "1.4.0"
+    rev: "1.4.1"
     hooks:
       - id: tox-ini-fmt
         args: [ --stdout ]
 
   - repo: https://github.com/tox-dev/pyproject-fmt
-    rev: "2.2.3"
+    rev: "2.2.4"
     hooks:
       - id: pyproject-fmt
         args: [ --stdout ]
