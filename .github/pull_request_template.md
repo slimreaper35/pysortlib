@@ -2,7 +2,8 @@
 
 ## Issue
 
-Please link this PR to the respective issue in the commit message using the following syntax (if applicable):
+Please link this PR to the respective issue in the commit message
+using the following syntax (if applicable):
 
 closes #ISSUE-NUMBER
 
