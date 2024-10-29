@@ -1,54 +1,42 @@
 [build-system]
 build-backend = "poetry.core.masonry.api"
-requires = [
-  "poetry-core",
-]
+requires = ["poetry-core"]
 
 [tool.poetry]
 name = "pysortlib"
 version = "0.5.2"
 description = "Python Sorting Library"
 license = "MIT"
-authors = [
-  "Michal Šoltis <msoltis@redhat.com>",
-]
+authors = ["Michal Šoltis <msoltis@redhat.com>"]
 readme = "README.md"
 repository = "https://github.com/slimreaper35/pysortlib"
-keywords = [
-  "sorting",
-  "algorithms",
-  "data structures",
-]
+keywords = ["sorting", "algorithms", "data structures"]
 classifiers = [
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
   "Programming Language :: Python",
-  "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "Topic :: Software Development :: Libraries :: Python Modules",
   "Topic :: Education",
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 
 [tool.poetry.dev-dependencies]
-black = "*"
 hypothesis = "*"
 mypy = "*"
+nox = "*"
 pre-commit = "*"
 pyproject-fmt = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-rich = "*"
 ruff = "*"
-tox = "*"
-tox-ini-fmt = "*"
 
 [tool.ruff]
-lint.select = [
-  "ALL",
-]
+lint.select = ["ALL"]
 lint.ignore = [
   "D100", # Missing docstring in public module
   "D203", # 1 blank line required before class docstring
@@ -75,5 +63,5 @@ strict = true
 strict_equality = true
 
 [[tool.mypy.overrides]]
-module = "tests/*"
+module = ["noxfile", "tests/*"]
 disallow_untyped_decorators = false

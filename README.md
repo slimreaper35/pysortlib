@@ -61,10 +61,15 @@ pre-commit clean
 pre-commit install --hook-type pre-commit
 ```
 
+### Testing
+
+```bash
+nox
+```
+
 ### Coding standards
 
 - ~~perfectionism~~
-- [black](https://black.readthedocs.io/en/stable/) - code formatting
 - [ruff](https://beta.ruff.rs/docs/) - static code analysis
 - [mypy](https://mypy.readthedocs.io/en/stable/) - static type checking
 - [pytest](https://docs.pytest.org/en/stable/) - unit tests
