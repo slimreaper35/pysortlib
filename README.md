@@ -61,7 +61,7 @@ pre-commit clean
 pre-commit install --hook-type pre-commit
 ```
 
-### Testing
+## Testing
 
 ```bash
 nox

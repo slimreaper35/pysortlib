@@ -14,7 +14,7 @@ def ruff(session: Session) -> None:
 
 @nox.session(name="mypy", reuse_venv=True, python="3.12")
 def mypy(session: Session) -> None:
-    """Run mypy to check for type hints."""
+    """Run mypy to perform static type checking."""
     deps = ["mypy"]
     for dep in deps:
         session.install(dep)

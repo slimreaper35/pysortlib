@@ -14,4 +14,3 @@ repos:
     rev: "v0.42.0"
     hooks:
       - id: markdownlint
-        args: [.]
