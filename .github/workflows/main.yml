@@ -50,6 +50,6 @@ jobs:
       - name: Test with nox
         run: nox -e pytest
       - name: Upload coverage report
-        uses: codecov/codecov-action@v5.0.7
+        uses: codecov/codecov-action@v5.1.2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
