@@ -96,8 +96,8 @@ def heap_sort(array: list[int]) -> None:
     """
     Sorts an array of integers using the heap sort algorithm.
 
-    Time complexity: O(n*log(n)), where n is the length of the array.
-    Extra space complexity: O(1).
+    Time complexity: O(n log(n)), where n is the length of the array.
+    Extra space complexity: O(1)
 
     Stable: No (the relative order of equal elements is not preserved).
     In-place: Yes (the input array is modified).
@@ -157,7 +157,7 @@ def merge_sort(array: list[int]) -> list[int]:
     """
     Sorts an array of integers using the merge sort algorithm.
 
-    Time complexity: O(n*log(n)), where n is the length of the array.
+    Time complexity: O(n log(n)), where n is the length of the array.
     Extra space complexity: O(n), where n is the length of the array.
 
     Stable: Yes (the relative order of equal elements is preserved).
@@ -181,23 +181,23 @@ def merge_sort(array: list[int]) -> list[int]:
 
 
 def _partition(array: list[int], start: int, end: int) -> int:
-    pivot = array[end]
-    pivot_index = start - 1
+    partition = array[end]
+    partition_index = start - 1
 
     for i in range(start, end):
-        if array[i] <= pivot:
-            pivot_index += 1
-            swap(array, pivot_index, i)
+        if array[i] <= partition:
+            partition_index += 1
+            swap(array, partition_index, i)
 
-    swap(array, pivot_index + 1, end)
-    return pivot_index + 1
+    swap(array, partition_index + 1, end)
+    return partition_index + 1
 
 
 def quick_sort(array: list[int], left: int, right: int) -> None:
     """
     Sorts an array of integers using the quick sort algorithm.
 
-    Time complexity: O(n*log(n)), where n is the length of the array.
+    Time complexity: O(n log(n)), where n is the length of the array.
     Extra space complexity: O(1)
 
     Stable: No (the relative order of equal elements is not preserved).
@@ -242,7 +242,7 @@ def shell_sort(array: list[int]) -> None:
     Sorts an array of integers using the shell sort algorithm.
 
     Time complexity: O(n^2), where n is the length of the array.
-    Extra space complexity: O(1).
+    Extra space complexity: O(1)
 
     Stable: No (the relative order of equal elements is not preserved).
     In-place: Yes (the input array is modified).
@@ -272,7 +272,7 @@ def pancake_sort(array: list[int]) -> None:
     Sorts an array of integers using the pancake sort algorithm.
 
     Time complexity: O(n^2), where n is the length of the array.
-    Extra space complexity: O(1).
+    Extra space complexity: O(1)
 
     Stable: No (the relative order of equal elements is not preserved).
     In-place: Yes (the input array is modified).

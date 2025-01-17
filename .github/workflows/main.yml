@@ -30,7 +30,7 @@ jobs:
           pip install --upgrade pip
           pip install nox
       - name: Test '${{ matrix.nox_env }}' with nox
-        run: nox -e ${{ matrix.nox_env }}
+        run: nox -s ${{ matrix.nox_env }}
 
   tests:
     name: Unit tests
@@ -48,7 +48,7 @@ jobs:
           pip install nox
           pip install coverage
       - name: Test with nox
-        run: nox -e pytest
+        run: nox -s pytest
       - name: Upload coverage report
         uses: codecov/codecov-action@v5.1.2
         with:
