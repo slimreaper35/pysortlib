@@ -1,7 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
-  "enabledManagers": [],
-  "lockFileMaintenance": { "enabled": true },
-  "schedule": ["before 4am on the first day of the month"]
+  "dependencyDashboard": false,
+  "packageRules": [
+    {
+      "matchPackageNames": ["*"],
+      "enabled": false
+    }
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 4am on the first day of the month"]
+  }
 }
