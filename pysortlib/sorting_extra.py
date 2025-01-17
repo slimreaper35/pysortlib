@@ -4,7 +4,7 @@ import concurrent.futures
 import time
 from itertools import chain, repeat
 
-from .utils import check_negative_integers
+from pysortlib.utils import check_negative_integers
 
 
 def counting_sort(array: list[int], *, max_value: int) -> list[int]:
@@ -48,7 +48,7 @@ def radix_sort(array: list[int], *, max_digits: int, base: int = 10) -> list[int
     """
     Sorts an array of integers using the radix sort algorithm.
 
-    Time complexity: O(d*(n+k)), where:
+    Time complexity: O(d (n+k)), where:
      - d is the number of digits in the largest number
      - n is the length of the array
      - k is the number of possible digits (the base)
@@ -62,7 +62,7 @@ def radix_sort(array: list[int], *, max_digits: int, base: int = 10) -> list[int
 
     :param array: array of integers
     :param max_digits: number of digits in the largest number
-    :param base: base of the numbers, default is 10
+    :param base: base of the numbers
     :raises: ValueError: if the array contains negative integers
     :return: sorted array of integers
     """
@@ -79,9 +79,9 @@ def radix_sort(array: list[int], *, max_digits: int, base: int = 10) -> list[int
     return array
 
 
-def _shut_up_for(secs: int) -> int:
-    time.sleep(secs)
-    return secs
+def _shut_up_for(seconds: int) -> int:
+    time.sleep(seconds)
+    return seconds
 
 
 def sleep_sort(array: list[int]) -> list[int]:
@@ -92,8 +92,11 @@ def sleep_sort(array: list[int]) -> list[int]:
     Extra space complexity: O(n), where n is the length of the array.
 
     :param array: array of integers
+    :raises: ValueError: if the array contains negative integers
     :return: sorted array of integers
     """
+    check_negative_integers(array)
+
     with concurrent.futures.ThreadPoolExecutor() as executor:
         futures = [executor.submit(_shut_up_for, num) for num in array]
         iterator = concurrent.futures.as_completed(futures)

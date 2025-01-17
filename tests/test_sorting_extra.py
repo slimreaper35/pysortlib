@@ -23,9 +23,9 @@ def test_counting_sort(array: list[int]) -> None:
     ],
 )
 def test_counting_sort_with_negative_integers(array: list[int]) -> None:
-    with pytest.raises(ValueError) as exc:
+    pattern = "The array must contain only non-negative integers"
+    with pytest.raises(ValueError, match=pattern):
         counting_sort(array, max_value=1)
-    assert str(exc.value) == "The array should contain only non-negative integers"
 
 
 @given(lists(integers(min_value=0, max_value=999)))
@@ -42,9 +42,9 @@ def test_radix_sort(array: list[int]) -> None:
     ],
 )
 def test_radix_sort_with_negative_integers(array: list[int]) -> None:
-    with pytest.raises(ValueError) as exc:
+    pattern = "The array must contain only non-negative integers"
+    with pytest.raises(ValueError, match=pattern):
         radix_sort(array, max_digits=1)
-    assert str(exc.value) == "The array should contain only non-negative integers"
 
 
 @pytest.mark.parametrize(
@@ -65,3 +65,16 @@ def test_sleep_sort(array: list[int]) -> None:
 
     assert (end - start) < timeout
     assert result == sorted(array)
+
+
+@pytest.mark.parametrize(
+    "array",
+    [
+        [-1, 0],
+        [0, -1],
+    ],
+)
+def test_sleep_sort_with_negative_integers(array: list[int]) -> None:
+    pattern = "The array must contain only non-negative integers"
+    with pytest.raises(ValueError, match=pattern):
+        radix_sort(array, max_digits=1)

@@ -45,10 +45,9 @@ lint.per-file-ignores."__init__.py" = [
   "F401", # {name} imported but unused
 ]
 lint.per-file-ignores."tests/*" = [
-  "D103",  # Missing docstring in public function
-  "D104",  # Missing docstring in public package
-  "PT011", # pytest.raises({exception}) is too broad, set the match parameter or use a more specific exception
-  "S101",  # Use of assert detected
+  "D103", # Missing docstring in public function
+  "D104", # Missing docstring in public package
+  "S101", # Use of assert detected
 ]
 
 [tool.mypy]
