@@ -42,16 +42,9 @@ print(array)
 ### Virtual environment
 
 ```bash
-pip install --user poetry
-poetry config virtualenvs.in-project true
-poety shell
-poetry install
-```
-
-### Dependencies
-
-```bash
-poetry update
+pip install --user uv
+uv venv
+uv sync
 ```
 
 ### Pre-commit

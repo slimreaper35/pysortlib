@@ -21,14 +21,14 @@ jobs:
           python-version: "3.13"
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install poetry
+          pip install --upgrade pip
+          pip install uv
       - name: Build project
-        run: poetry build
+        run: uv build
       - name: Publish to PyPI
-        run: poetry publish
+        run: uv publish
         env:
-          POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOKEN }}
+          UV_PUBLISH_TOKEN: ${{ secrets.PYPI_TOKEN }}
       - name: Create GitHub release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

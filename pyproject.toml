@@ -1,53 +1,37 @@
-[build-system]
-build-backend = "poetry.core.masonry.api"
-requires = ["poetry-core"]
-
-[tool.poetry]
+[project]
 name = "pysortlib"
 version = "1.0.0"
 description = "Python Sorting Library"
-license = "MIT"
-authors = ["Michal Šoltis <msoltis@redhat.com>"]
 readme = "README.md"
-repository = "https://github.com/slimreaper35/pysortlib"
+authors = [{ name = "Michal Šoltis", email = "msoltis@redhat.com" }]
+requires-python = ">=3.13"
+dependencies = []
 keywords = ["sorting", "algorithms", "data structures"]
 classifiers = [
-  "License :: OSI Approved :: MIT License",
-  "Operating System :: OS Independent",
-  "Programming Language :: Python",
-  "Programming Language :: Python :: 3.13",
-  "Topic :: Software Development :: Libraries :: Python Modules",
-  "Topic :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Education",
 ]
 
-[tool.poetry.dependencies]
-python = "^3.13"
+[build-system]
+requires = ["uv_build>=0.9.6,<0.10.0"]
+build-backend = "uv_build"
 
-[tool.poetry.dev-dependencies]
-hypothesis = "*"
-mypy = "*"
-nox = "*"
-pre-commit = "*"
-pyproject-fmt = "*"
-pytest = "*"
-pytest-cov = "*"
-pytest-rich = "*"
-ruff = "*"
-
-[tool.ruff]
-lint.select = ["ALL"]
-lint.ignore = [
-  "D100", # Missing docstring in public module
-  "D203", # 1 blank line required before class docstring
-  "D212", # Multi-line docstring summary should start at the first line
-]
-lint.per-file-ignores."__init__.py" = [
-  "F401", # {name} imported but unused
-]
-lint.per-file-ignores."tests/*" = [
-  "D103", # Missing docstring in public function
-  "D104", # Missing docstring in public package
-  "S101", # Use of assert detected
+[dependency-groups]
+dev = [
+    "hypothesis>=6.142.5",
+    "mypy>=1.18.2",
+    "nox>=2025.10.16",
+    "pre-commit>=4.3.0",
+    "pyproject-fmt>=2.11.0",
+    "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+    "pytest-rich>=0.2.0",
+    "pyupgrade>=3.21.0",
+    "ruff>=0.14.3",
 ]
 
 [tool.mypy]

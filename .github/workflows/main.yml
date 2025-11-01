@@ -29,6 +29,7 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install nox
+          pip install uv
       - name: Test '${{ matrix.nox_env }}' with nox
         run: nox -s ${{ matrix.nox_env }}
 
@@ -46,6 +47,7 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install nox
+          pip install uv
           pip install coverage
       - name: Test with nox
         run: nox -s pytest
