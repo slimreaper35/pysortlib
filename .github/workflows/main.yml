@@ -17,39 +17,33 @@ jobs:
       matrix:
         nox_env:
           - ruff
-          - mypy
+          - ty
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Set up Python 3.13
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.13"
+
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install nox
-          pip install uv
-      - name: Test '${{ matrix.nox_env }}' with nox
+        run: pip install nox uv
+      - name: Run '${{ matrix.nox_env }}' with nox
         run: nox -s ${{ matrix.nox_env }}
 
   tests:
     name: Unit tests
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Set up Python 3.13
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.13"
+
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install nox
-          pip install uv
-          pip install coverage
-      - name: Test with nox
+        run: pip install nox uv
+      - name: Run tests with nox
         run: nox -s pytest
       - name: Upload coverage report
         uses: codecov/codecov-action@v5.1.2

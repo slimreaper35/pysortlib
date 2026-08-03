@@ -3,47 +3,31 @@ name = "pysortlib"
 version = "1.0.1"
 description = "Python Sorting Library"
 readme = "README.md"
-authors = [{ name = "Michal Šoltis", email = "msoltis@redhat.com" }]
 requires-python = ">=3.13"
-dependencies = []
-keywords = ["sorting", "algorithms", "data structures"]
+authors = [{ name = "Michal Šoltis", email = "msoltis147@gmail.com" }]
+keywords = ["algorithms", "data structures", "sorting"]
 classifiers = [
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3.13",
-    "Topic :: Software Development :: Libraries :: Python Modules",
-    "Topic :: Education",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Education",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "ruff>=0.14.3",
+  "ty>=0.0.65",
+]
+optional = ["pyupgrade>=3.21.0"]
+test = [
+  "hypothesis>=6.142.5",
+  "nox>=2025.10.16",
+  "pytest>=8.4.2",
+  "pytest-cov>=7.0.0",
+  "pytest-rich>=0.2.0",
 ]
 
 [build-system]
 requires = ["uv_build>=0.9.6,<0.10.0"]
 build-backend = "uv_build"
-
-[dependency-groups]
-dev = [
-    "hypothesis>=6.142.5",
-    "mypy>=1.18.2",
-    "nox>=2025.10.16",
-    "pre-commit>=4.3.0",
-    "pyproject-fmt>=2.11.0",
-    "pytest>=8.4.2",
-    "pytest-cov>=7.0.0",
-    "pytest-rich>=0.2.0",
-    "pyupgrade>=3.21.0",
-    "ruff>=0.14.3",
-]
-
-[tool.mypy]
-ignore_missing_imports = true
-disallow_untyped_calls = true
-disallow_untyped_defs = true
-disallow_incomplete_defs = true
-check_untyped_defs = true
-disallow_untyped_decorators = true
-strict = true
-strict_equality = true
-
-[[tool.mypy.overrides]]
-module = ["noxfile", "tests/*"]
-disallow_untyped_decorators = false
