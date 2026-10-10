@@ -4,7 +4,7 @@
 [![Downloads](https://static.pepy.tech/badge/pysortlib)](https://pepy.tech/project/pysortlib)
 [![Coverage](https://codecov.io/gh/slimreaper35/pysortlib/graph/badge.svg?token=S24DIT654W)](https://codecov.io/gh/slimreaper35/pysortlib)
 
-Library of sorting algorithms with precise implementation and documentation.
+Library of sorting algorithms with precise implementation and documentation for my own education.
 
 ## Algorithms
 
@@ -33,7 +33,7 @@ pip install pysortlib
 from pysortlib import insert_sort
 
 array = [3, 5, 2, 1, 7, 4, 6]
-insert_sort(array)  # set a breakpoint and explore \o/
+insert_sort(array)  # Set a breakpoint and explore \o/
 print(array)
 ```
 
@@ -42,16 +42,8 @@ print(array)
 ### Virtual environment
 
 ```bash
-pip install --user uv
 uv venv
-uv sync
-```
-
-### Pre-commit
-
-```bash
-pre-commit clean
-pre-commit install --hook-type pre-commit
+uv sync --all-groups
 ```
 
 ## Testing
@@ -59,10 +51,3 @@ pre-commit install --hook-type pre-commit
 ```bash
 nox
 ```
-
-### Coding standards
-
-- ~~perfectionism~~
-- [ruff](https://beta.ruff.rs/docs/) - static code analysis
-- [mypy](https://mypy.readthedocs.io/en/stable/) - static type checking
-- [pytest](https://docs.pytest.org/en/stable/) - unit tests

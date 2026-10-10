@@ -1,11 +1,10 @@
 # Contributing to the project
 
-We welcome contributions to the project. To contribute, please follow these steps:
+I welcome any contributions to the project. If you want to contribute, please follow these steps:
 
-1. Fork the repository
+1. Fork this repository
 2. Create a new branch
-3. Make your changes
-4. Test your changes
-5. Submit a pull request
+3. Push your changes
+4. Submit a pull request
 
-Please make sure to add tests for your changes and update the documentation.
+Please make sure to add tests for your changes and update the documentation if needed.
