@@ -26,5 +26,5 @@ def ty(session: Session) -> None:
 def pytest(session: Session) -> None:
     """Run pytest to execute unit tests."""
     _sync_dependencies(session)
-    session.run("pytest", "--cov", "--rich")
+    session.run("pytest", "--cov", "--cov-report=xml", "--rich")
     session.run("coverage", "report")
